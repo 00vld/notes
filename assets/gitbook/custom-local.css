@@ -1,0 +1,310 @@
+/* ===================== BASE THEME ===================== */
+
+.book {
+  background: #0e1117 !important;
+}
+
+.book-body,
+.book-body .page-wrapper,
+.book-body .page-inner {
+  background: #070b18 !important;
+  color: #e6edf3 !important;
+}
+
+/* ===================== SIDEBAR ===================== */
+
+.book-summary {
+  background: #0d121a !important;
+  border-right: 1px solid #3a414a !important;
+}
+
+.book-summary a {
+  color: #c9d1d9 !important;
+}
+
+.book-summary a:hover,
+.book-summary li.active > a {
+  background: #161b22 !important;
+  color: #ffffff !important;
+}
+
+/* visible separators in sidebar */
+.book-summary li.divider {
+  height: 1px !important;
+  background: #30363d !important;
+  margin: 8px 0 !important;
+}
+
+/* ===================== CONTENT SEPARATION ===================== */
+
+.page-wrapper {
+  box-shadow: inset 1px 0 0 #30363d !important;
+}
+
+/* ===================== HEADINGS ===================== */
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  color: #ffffff !important;
+}
+
+.markdown-section h1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0.6rem;
+  background: linear-gradient(to right, #30363d, transparent);
+}
+
+.markdown-section h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0.4rem;
+  width: 55%;
+  background: linear-gradient(to right, #30363d, transparent);
+}
+
+/* ===================== TEXT ===================== */
+
+.markdown-section p,
+.markdown-section li {
+  color: #d1d5db !important;
+}
+
+.markdown-section a {
+  color: #58a6ff !important;
+}
+
+.markdown-section a:hover {
+  color: #79c0ff !important;
+}
+
+/* ===================== TIP BLOCK ===================== */
+
+.block-tip {
+  background: #0f3d2e !important;
+  border-left: 4px solid #2ea043 !important;
+  color: #d1fae5 !important;
+  padding: 12px 16px !important;
+}
+
+.block-tip strong {
+  color: #ecfdf5 !important;
+}
+
+/* ===================== LISTS ===================== */
+
+.markdown-section ul {
+  padding-left: 1.3rem !important;
+}
+
+.markdown-section ul li {
+  margin: 0.45rem 0 !important;
+}
+
+.markdown-section ul li::marker {
+  color: #8b949e !important;
+}
+
+/* ===================== INLINE CODE ===================== */
+
+.markdown-section p code,
+.markdown-section li code {
+  background: #161b22 !important;
+  color: #79c0ff !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+}
+
+/* ===================== CODE BLOCKS (CORRECT WRAPPER) ===================== */
+
+.markdown-section .highlighter-rouge {
+  font-size: 1.2rem !important;
+  margin: 1.4rem 0 !important;
+}
+
+.markdown-section .highlighter-rouge pre {
+  background: #000000 !important;
+  border: 1px solid #30363d !important;
+  box-shadow: 0 0 0 1px rgba(88,166,255,0.15) !important;
+  border-left: 2px solid #353c45 !important;
+  border-radius: 6px !important;
+  border-radius: 8px !important;
+  padding: 18px 20px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6) !important;
+}
+
+
+.markdown-section .highlighter-rouge pre code {
+  background: transparent !important;
+  color: #e6edf3 !important;
+  font-size: 1.2rem !important;
+  line-height: 1.9 !important;
+}
+
+/* remove rouge junk */
+.markdown-section pre *,
+.markdown-section code span {
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* ===================== COPY BUTTON ===================== */
+
+.copy-code-button {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+  background: #0b0f14 !important;
+  color: #9ca3af !important;
+  border: 1px solid #1f2937 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.15s ease, transform 0.15s ease !important;
+}
+
+.markdown-section pre:hover .copy-code-button {
+  opacity: 0.85 !important;
+  pointer-events: auto !important;
+  transform: translateY(-1px) !important;
+}
+
+.copy-code-button:hover {
+  background: #161b22 !important;
+  color: #ffffff !important;
+}
+
+/* ===================== TABLES ===================== */
+
+table th {
+  background: #161b22 !important;
+  color: #f0f6fc !important;
+}
+
+table td {
+  background: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+/* ===================== SEARCH ===================== */
+
+#book-search-input input {
+  background: #0d1117 !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d !important;
+}
+
+/* ===================== HEADER ===================== */
+
+.book-header {
+  background: #0b0f14 !important;
+  border-bottom: 1px solid #1f2937 !important;
+}
+
+/* ===================== BACK TO TOP ===================== */
+
+.back-to-top {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  bottom: 96px !important;
+  right: 28px !important;
+  background: #0b0f14 !important;
+  border: 1px solid #1f2937 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6) !important;
+  opacity: 0.55 !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+.back-to-top:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px) !important;
+}
+
+.back-to-top i,
+.back-to-top .fa-arrow-up {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
+
+
+/* =================================================
+   FINAL FIX: BACK TO TOP + BOTTOM WHITE LINE
+   ================================================= */
+
+/* ---- BACK TO TOP: PERFECT CENTERING ---- */
+.back-to-top {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 40px !important;
+  height: 40px !important;
+
+  background: #0b0f14 !important;
+  border: 1px solid #1f2937 !important;
+  border-radius: 50% !important;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6) !important;
+  opacity: 0.55 !important;
+
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+.back-to-top:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px) !important;
+}
+
+.back-to-top i,
+.back-to-top .fa-arrow-up {
+  font-size: 16px !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ---- KILL THE WHITE LINE AT THE BOTTOM ---- */
+.markdown-section hr {
+  background: none !important;
+  height: 0 !important;
+  border: none !important;
+}
+
+.page-wrapper::before,
+.page-wrapper::after,
+.page-inner::before,
+.page-inner::after {
+  content: none !important;
+  display: none !important;
+}
+
+.book-body::after,
+.book-body::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Remove any stray bottom borders/shadows */
+.page-wrapper,
+.page-inner,
+.markdown-section {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
