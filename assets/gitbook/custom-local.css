@@ -124,7 +124,7 @@
 /* ===================== CODE BLOCKS (CORRECT WRAPPER) ===================== */
 
 .markdown-section .highlighter-rouge {
-  font-size: 1.2rem !important;
+  font-size: 1.4  rem !important;
   margin: 1.4rem 0 !important;
 }
 
@@ -143,7 +143,7 @@
 .markdown-section .highlighter-rouge pre code {
   background: transparent !important;
   color: #e6edf3 !important;
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   line-height: 1.9 !important;
 }
 
